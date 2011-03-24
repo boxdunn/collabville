@@ -1,0 +1,19 @@
+Our RSA fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48
+
+Your API token is aef5c38c003a61ae4ee9534bf5e04362
+
+git@github.com:boxdunn/collabville.git
+
+
+login: winxalex
+pass: collabville1 [21:57:42] Aaron Dunn: collabville1
+
+so apparently i dont know much about coding :)
+[22:09:37] Aaron Dunn: and we dont need to use github we can just use git with my new server
+[22:09:41] Aaron Dunn: http://kb.mediatemple.net/questions/1594/Using+Git
+[22:10:03] Aaron Dunn: so if thats easier I can just give you ftp or access to the server
+[22:14:11] Aaron Dunn: i made you an account on the server, ftp access, ssh and everything
+[22:14:21] Aaron Dunn: username is now the right way, winxalex and same password
+[22:15:35] winxalex: ok
+[22:15:42] winxalex: what is the ftp address
+[22:16:16] Aaron Dunn: for now i think its this: Access Domain:s123861.gridserver.com

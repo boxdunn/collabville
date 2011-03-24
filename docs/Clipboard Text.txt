@@ -1,0 +1,8 @@
+[20:03:24]
+ Aaron Dunn: i want to send you the current source code for the game, and my developer wants to see "... ask him to modify the code using playerio to send a simple string from each user to all other user
+ 
+login: adunn
+pass:34H#jf
+
+
+77.66.63.116:443

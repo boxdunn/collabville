@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Graphic version="2.0" viewHeight="144.804" viewWidth="219.25" ai:appVersion="15.0.2.399" ATE:version="1.0.0" flm:version="1.0.0" d:using="" xmlns="http://ns.adobe.com/fxg/2008" xmlns:ATE="http://ns.adobe.com/ate/2009" xmlns:ai="http://ns.adobe.com/ai/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:flm="http://ns.adobe.com/flame/2008">
+  <Library/>
+  <Group blendMode="layer" ai:seqID="1" d:layerType="page" d:pageHeight="144.804" d:pageWidth="219.25" d:type="layer" d:userLabel="Artboard 1">
+    <Group blendMode="normal" ai:seqID="2" d:type="layer" d:userLabel="Layer 1">
+      <Group blendMode="normal" ai:seqID="3" flm:knockout="false" d:type="layer" d:userLabel="Largetable">
+        <Group blendMode="normal" ai:seqID="4">
+          <Group x="1.25" y="37.3633" alpha="0.25" ai:seqID="5" flm:isolated="false" flm:knockout="false">
+            <Path winding="nonZero" ai:seqID="6" data="M0 41.1143 81 0 218 68.4775 139.75 107.44 0 41.1143Z">
+              <fill>
+                <SolidColor color="#030303"/>
+              </fill>
+            </Path>
+          </Group>
+          <Path x="19.25" y="47.4776" winding="nonZero" ai:seqID="7" data="M9 40 0 36 0 -3.05176e-005 9 -3.05176e-005 9 40Z">
+            <fill>
+              <LinearGradient x="1.45654" y="-25.8223" scaleX="40.0288" rotation="86.0275">
+                <GradientEntry ratio="0" color="#D2A73A"/>
+                <GradientEntry ratio="1" color="#655128"/>
+              </LinearGradient>
+            </fill>
+          </Path>
+          <Path x="27.75" y="51.4776" winding="nonZero" ai:seqID="8" data="M9 31.5 0 36 0 -3.05176e-005 9 -3.05176e-005 9 31.5Z">
+            <fill>
+              <SolidColor color="#3D2A12"/>
+            </fill>
+          </Path>
+          <Path x="129.75" y="100.478" winding="nonZero" ai:seqID="9" data="M9 40 0 36 0 -3.05176e-005 9 -3.05176e-005 9 40Z">
+            <fill>
+              <LinearGradient x="1.45703" y="-25.8213" scaleX="40.0288" rotation="86.0275">
+                <GradientEntry ratio="0" color="#D2A73A"/>
+                <GradientEntry ratio="1" color="#655128"/>
+              </LinearGradient>
+            </fill>
+          </Path>
+          <Path x="138.25" y="104.478" winding="nonZero" ai:seqID="10" data="M9 31.5 0 36 0 -3.05176e-005 9 -3.05176e-005 9 31.5Z">
+            <fill>
+              <SolidColor color="#3D2A12"/>
+            </fill>
+          </Path>
+          <Path x="183.75" y="73.4776" winding="nonZero" ai:seqID="11" data="M9 40 0 36 0 -3.05176e-005 9 -3.05176e-005 9 40Z">
+            <fill>
+              <LinearGradient x="1.45703" y="-25.8218" scaleX="40.0288" rotation="86.0275">
+                <GradientEntry ratio="0" color="#D2A73A"/>
+                <GradientEntry ratio="1" color="#655128"/>
+              </LinearGradient>
+            </fill>
+          </Path>
+          <Path x="192.25" y="77.4776" winding="nonZero" ai:seqID="12" data="M9 31.5 0 36 0 -3.05176e-005 9 -3.05176e-005 9 31.5Z">
+            <fill>
+              <SolidColor color="#3D2A12"/>
+            </fill>
+          </Path>
+          <Group ai:seqID="13" flm:knockout="false">
+            <Path winding="nonZero" ai:seqID="14" data="M0 43.1309 0.138672 40.9629 82.25 0 219.25 68.4775 219.111 70.6455 137 111.606 0 43.1309Z">
+              <fill>
+                <LinearGradient x="109.625" y="1.61572" scaleX="198.405" rotation="90">
+                  <GradientEntry ratio="0" color="#D2A73A"/>
+                  <GradientEntry ratio="1" color="#655128"/>
+                </LinearGradient>
+              </fill>
+            </Path>
+          </Group>
+          <Group y="40.9629" blendMode="multiply" ai:seqID="15" flm:isolated="false" flm:knockout="false">
+            <Path winding="nonZero" ai:seqID="16" data="M137 70.6436 137.139 68.4775 0.138672 0 0 2.16797 137 70.6436Z">
+              <fill>
+                <LinearGradient x="75.978" y="-13.5205" scaleX="82.7603" rotation="98.6252">
+                  <GradientEntry ratio="0" color="#C59E4F"/>
+                  <GradientEntry ratio="1" color="#655128"/>
+                </LinearGradient>
+              </fill>
+            </Path>
+          </Group>
+          <Group x="137" y="68.4775" blendMode="multiply" ai:seqID="17" flm:isolated="false" flm:knockout="false">
+            <Path winding="nonZero" ai:seqID="18" data="M82.25 0 82.1113 2.16797 0 43.1289 0.138672 40.9629 82.25 0Z">
+              <fill>
+                <LinearGradient x="13.1035" y="-60.5659" scaleX="98.6394" rotation="71.1616">
+                  <GradientEntry ratio="0" color="#C59E4F"/>
+                  <GradientEntry ratio="1" color="#655128"/>
+                </LinearGradient>
+              </fill>
+            </Path>
+          </Group>
+          <Group blendMode="multiply" ai:seqID="19" flm:isolated="false" flm:knockout="false">
+            <Path winding="nonZero" ai:seqID="20" data="M82.2495 1.11768 218.21 69.0752 218.15 70.0078 137 110.488 1.04053 42.5327 1.1001 41.6011 82.2495 1.11768M82.25 0 0.138672 40.9629 0 43.1309 137 111.606 219.111 70.6455 219.25 68.4775 82.25 0 82.25 0Z">
+              <fill>
+                <SolidColor color="#D6B98E"/>
+              </fill>
+            </Path>
+          </Group>
+        </Group>
+      </Group>
+    </Group>
+  </Group>
+  <Private/>
+</Graphic>

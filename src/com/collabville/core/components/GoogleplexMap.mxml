@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<support:GridMapBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+					 xmlns:s="library://ns.adobe.com/flex/spark"
+					 xmlns:mx="library://ns.adobe.com/flex/mx"
+					 xmlns:support="com.collabville.core.components.supportClasses.*" mapData="{googleData}">
+	
+	<fx:Script>
+		<![CDATA[
+			import com.collabville.core.rl.models.maps.GoogleplexData;
+			import com.collabville.core.rl.models.maps.IMapData;
+			
+			[Bindable] public var googleData:IMapData = new GoogleplexData();
+		]]>
+	</fx:Script>
+	<mx:Image id="base" source="@Embed('resources/images/googleplex.png')" scaleContent="false"
+			  maintainAspectRatio="true" left="0" top="0"/>
+</support:GridMapBase>

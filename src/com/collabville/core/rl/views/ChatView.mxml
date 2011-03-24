@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Panel xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="466" height="300">
+
+	<fx:Script>
+		<![CDATA[
+			import com.collabville.core.rl.events.ChatViewEvent;
+			
+			import mx.collections.ArrayCollection;
+			import mx.events.FlexEvent;
+			protected function sendMessageButton_clickHandler(event:MouseEvent):void
+			{
+				// TODO Auto-generated method stub
+				if(messageTextInput.text.length>0)
+				{
+				dispatchEvent(new ChatViewEvent(ChatViewEvent.SEND,messageTextInput.text));
+				messageTextInput.text="";
+				}
+				
+			}
+
+		
+			protected function messageTextInput_enterHandler(event:FlexEvent):void
+			{
+				// TODO Auto-generated method stub
+				if(messageTextInput.text.length>0)
+				{
+					dispatchEvent(new ChatViewEvent(ChatViewEvent.SEND,messageTextInput.text));
+					messageTextInput.text="";
+				}// TODO Auto-generated method stub
+			}
+
+		]]>
+	</fx:Script>
+
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<s:TextInput x="10" y="235" width="300" id="messageTextInput"  enter="messageTextInput_enterHandler(event)"/>
+	<s:Button x="318" y="235" label="send" id="sendMessageButton" click="sendMessageButton_clickHandler(event)" width="136"/>
+	<s:TextArea x="10" y="10" width="300" height="217" id="chatTextArea" editable="false"/>
+	<s:List x="315" y="10" height="218" id="userList" dataProvider="{new ArrayCollection()}" width="139"></s:List>
+</s:Panel>

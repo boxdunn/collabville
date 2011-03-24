@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Graphic version="2.0" viewHeight="82.6841" viewWidth="49.6885" ai:appVersion="15.0.2.399" ATE:version="1.0.0" flm:version="1.0.0" d:using="" xmlns="http://ns.adobe.com/fxg/2008" xmlns:ATE="http://ns.adobe.com/ate/2009" xmlns:ai="http://ns.adobe.com/ai/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:flm="http://ns.adobe.com/flame/2008">
+  <Library>
+    <Definition name="droid_nw">
+      <Group>
+        <Path x="-19.9951" y="23.3018" alpha="0.2" winding="nonZero" ai:seqID="3" data="M0 9.02051C0 14.002 8.99512 18.04 20.0908 18.04 31.1865 18.04 40.1807 14.002 40.1807 9.02051 40.1807 4.03809 31.1865 0 20.0908 0 8.99512 0 0 4.03809 0 9.02051Z">
+          <fill>
+            <SolidColor color="#131215"/>
+          </fill>
+        </Path>
+        <Path x="5.27441" y="-40.9321" winding="nonZero" ai:seqID="4" data="M2.49121 8.41064C2.12891 9.05127 1.31543 9.27783 0.674805 8.91357L0.674805 8.91357C0.0361328 8.55225 -0.189453 7.73779 0.172852 7.09814L3.80762 0.67627C4.1709 0.0366211 4.9834 -0.189941 5.62402 0.17334L5.62402 0.17334C6.26465 0.535645 6.48926
+ 1.34912 6.12695 1.98975L2.49121 8.41064Z">
+          <fill>
+            <LinearGradient x="1.99121" y="3.88672" scaleX="2.66681" rotation="29.5239">
+              <GradientEntry ratio="0" color="#B4D676"/>
+              <GradientEntry ratio="0.711656" color="#96C545"/>
+            </LinearGradient>
+          </fill>
+          <stroke>
+            <SolidColorStroke weight="0.820006" caps="none" joints="miter" miterLimit="10" color="#66842E"/>
+          </stroke>
+        </Path>
+        <Path x="15.335" y="-14.5557" winding="nonZero" ai:seqID="5" data="M9.09766 26.1885C9.09766 28.7002 7.06152 30.7363 4.5498 30.7363L4.5498 30.7363C2.03711 30.7363 0 28.7002 0 26.1885L0 4.54883C0 2.03613 2.03711 0 4.5498 0L4.5498 0C7.06152 0 9.09766 2.03613 9.09766 4.54883L9.09766 26.1885Z">
+          <fill>
+            <LinearGradient x="0" y="15.3682" scaleX="9.0976">
+              <GradientEntry ratio="0" color="#B4D676"/>
+              <GradientEntry ratio="0.711656" color="#96C545"/>
+            </LinearGradient>
+          </fill>
+          <stroke>
+            <SolidColorStroke weight="0.820006" caps="none" joints="miter" miterLimit="10" color="#66842E"/>
+          </stroke>
+        </Path>
+        <Path x="15.335" y="-14.5557" alpha="0.2" winding="nonZero" ai:seqID="6" data="M9.09766 26.1885C9.09766 28.7002 7.06152 30.7363 4.5498 30.7363L4.5498 30.7363C2.03711 30.7363 0 28.7002 0 26.1885L0 4.54883C0 2.03613 2.03711 0 4.5498 0L4.5498 0C7.06152 0 9.09766 2.03613 9.09766 4.54883L9.09766 26.1885Z">
+          <fill>
+            <SolidColor color="#131215"/>
+          </fill>
+        </Path>
+        <Path x="-13.3672" y="5.05566" winding="nonZero" ai:seqID="7" data="M10.1133 29.1113C10.1133 31.9033 7.84961 34.167 5.05664 34.167L5.05664 34.167C2.26367 34.167 0 31.9033 0 29.1113L0 5.05664C0 2.26367 2.26367 0 5.05664 0L5.05664 0C7.84961 0 10.1133 2.26367 10.1133 5.05664L10.1133 29.1113Z">
+          <fill>
+            <LinearGradient x="0" y="17.0835" scaleX="10.1133">
+              <GradientEntry ratio="0" color="#B4D676"/>
+              <GradientEntry ratio="0.711656" color="#96C545"/>
+            </LinearGradient>
+          </fill>
+          <stroke>
+            <SolidColorStroke weight="0.820006" caps="none" joints="miter" miterLimit="10" color="#66842E"/>
+          </stroke>
+        </Path>
+        <Path x="2.82813" y="-1.50391" winding="nonZero" ai:seqID="8" data="M10.1133 29.1104C10.1133 31.9033 7.84863 34.167 5.05664 34.167L5.05664 34.167C2.26367 34.167 0 31.9033 0 29.1104L0 5.05664C0 2.26367 2.26367 0 5.05664 0L5.05664 0C7.84863 0 10.1133 2.26367 10.1133 5.05664L10.1133 29.1104Z">
+          <fill>
+            <LinearGradient x="0" y="17.0835" scaleX="10.1133">
+              <GradientEntry ratio="0" color="#B4D676"/>
+              <GradientEntry ratio="0.711656" color="#96C545"/>
+            </LinearGradient>
+          </fill>
+          <stroke>
+            <SolidColorStroke weight="0.820006" caps="none" joints="miter" miterLimit="10" color="#66842E"/>
+          </stroke>
+        </Path>
+        <Path x="2.57813" y="2.80566" alpha="0.2" winding="nonZero" ai:seqID="9" data="M6.125 21.833C3.87891 22.292 1.7168 22.0889 0 21.3965L0 5.05664C0 2.26367 2.26367 0 5.05664 0 7.84961 0 10.1133 2.26367 10.1133 5.05664L10.1133 20.2217C8.9873 20.957 7.63281 21.5254 6.125 21.833Z">
+          <fill>
+            <SolidColor color="#131215"/>
+          </fill>
+        </Path>
+        <Path x="-13.4219" y="4.05273" alpha="0.2" winding="nonZero" ai:seqID="10" data="M6.125 21.833C3.87891 22.292 1.7168 22.0889 0 21.3965L0 5.05664C0 2.26367 2.26367 0 5.05664 0 7.84961 0 10.1133 2.26367 10.1133 5.05664L10.1133 20.2217C8.9873 20.957 7.63281 21.5254 6.125 21.833Z">
+          <fill>
+            <SolidColor color="#131215"/>
+          </fill>
+        </Path>
+        <Path x="-19.9951" y="-23.5742" winding="nonZero" ai:seqID="11" data="M0 9.02051C0 4.03906 8.99512 0 20.0908 0 31.1865 0 40.1807 4.03906 40.1807 9.02051 40.1807 13.3926 40.1807 33.0742 40.1807 37.4463 40.1807 42.4287 31.1865 46.4668 20.0908 46.4668 8.99512 46.4668 0 42.4287 0 37.4463 0 32.9033 0 13.5645 0 9.02051Z">
+          <fill>
+            <LinearGradient x="42.1064" y="11.6045" scaleX="43.8825" rotation="152.133">
+              <GradientEntry ratio="0" color="#B4D676"/>
+              <GradientEntry ratio="0.711656" color="#96C545"/>
+            </LinearGradient>
+          </fill>
+          <stroke>
+            <SolidColorStroke weight="0.820006" caps="none" joints="miter" miterLimit="10" color="#66842E"/>
+          </stroke>
+        </Path>
+        <Path x="-23.7627" y="-8.03418" winding="nonZero" ai:seqID="12" data="M11.1328 2.56543C11.9814 4.66504 10.9678 7.05371 8.86816 7.90234L5.6377 9.20801C3.53809 10.0566 1.14746 9.04297 0.299805 6.94336L0.299805 6.94336C-0.548828 4.84375 0.464844 2.4541 2.56445 1.60547L5.7959 0.299805C7.89551 -0.548828 10.2852 0.46582
+ 11.1328 2.56543L11.1328 2.56543Z">
+          <fill>
+            <SolidColor color="#FFFFFF"/>
+          </fill>
+          <stroke>
+            <SolidColorStroke weight="0.820006" caps="none" joints="miter" miterLimit="10" color="#6E8E2F"/>
+          </stroke>
+        </Path>
+        <Path x="-19.9951" y="-24.6689" winding="nonZero" ai:seqID="13" data="M0 9.02051C0 14.002 8.99512 18.04 20.0908 18.04 31.1865 18.04 40.1807 14.002 40.1807 9.02051 40.1807 4.03906 31.1865 0 20.0908 0 8.99512 0 0 4.03906 0 9.02051Z">
+          <fill>
+            <SolidColor color="#76A438"/>
+          </fill>
+          <stroke>
+            <SolidColorStroke weight="0.820006" caps="none" joints="miter" miterLimit="10" color="#617328"/>
+          </stroke>
+        </Path>
+        <Path x="-19.9951" y="-36.1484" winding="nonZero" ai:seqID="14" data="M0 17.2197C0 22.2012 8.99512 26.2402 20.0908 26.2402 31.1865 26.2402 40.1807 22.2012 40.1807 17.2197 40.1807 12.2383 33.8945 0 20.0908 0 6.28613 0 0 12.2383 0 17.2197Z">
+          <fill>
+            <RadialGradient x="20.0908" y="13.1201" scaleX="-29.1116" scaleY="30.7957" rotation="1.85243" focalPointRatio="0.0317381" flm:focalY="-0.704626560211182">
+              <GradientEntry ratio="0" color="#B4D676"/>
+              <GradientEntry ratio="0.711656" color="#96C545"/>
+            </RadialGradient>
+          </fill>
+          <stroke>
+            <SolidColorStroke weight="0.820006" caps="none" joints="miter" miterLimit="10" color="#66842E"/>
+          </stroke>
+        </Path>
+        <Path x="-15.7422" y="-27.9834" winding="nonZero" ai:seqID="15" data="M0 3.79297C0 5.8877 1.69727 7.58496 3.79199 7.58496 5.88672 7.58496 7.58496 5.8877 7.58496 3.79297 7.58496 1.69824 5.88672 0 3.79199 0 1.69727 0 0 1.69824 0 3.79297Z">
+          <fill>
+            <SolidColor color="#FFFFFF"/>
+          </fill>
+          <stroke>
+            <SolidColorStroke weight="0.820006" caps="none" joints="miter" miterLimit="10" color="#6E8E2F"/>
+          </stroke>
+        </Path>
+        <Path x="-24.4355" y="-29.7256" winding="nonZero" ai:seqID="16" data="M10.1133 29.1113C10.1133 31.9033 7.84961 34.167 5.05762 34.167L5.05762 34.167C2.26465 34.167 0 31.9033 0 29.1113L0 5.05664C0 2.26367 2.26465 0 5.05762 0L5.05762 0C7.84961 0 10.1133 2.26367 10.1133 5.05664L10.1133 29.1113Z">
+          <fill>
+            <LinearGradient x="0" y="17.0835" scaleX="10.1132">
+              <GradientEntry ratio="0" color="#B4D676"/>
+              <GradientEntry ratio="0.711656" color="#96C545"/>
+            </LinearGradient>
+          </fill>
+          <stroke>
+            <SolidColorStroke weight="0.820006" caps="none" joints="miter" miterLimit="10" color="#66842E"/>
+          </stroke>
+        </Path>
+        <Path x="-12.9473" y="-37.8657" winding="nonZero" ai:seqID="17" data="M7.5 5.59814C8.02148 6.11768 8.02344 6.9624 7.50391 7.48389L7.50391 7.48389C6.98438 8.00439 6.14063 8.00537 5.61914 7.48682L0.392578 2.27686C-0.128906 1.75732 -0.130859 0.912598 0.388672 0.39209L0.388672 0.39209C0.90918 -0.129395 1.75195 -0.130371
+ 2.27344 0.388184L7.5 5.59814Z">
+          <fill>
+            <LinearGradient x="3.00586" y="4.88184" scaleX="2.66573" rotation="314.921">
+              <GradientEntry ratio="0" color="#B4D676"/>
+              <GradientEntry ratio="0.711656" color="#96C545"/>
+            </LinearGradient>
+          </fill>
+          <stroke>
+            <SolidColorStroke weight="0.820006" caps="none" joints="miter" miterLimit="10" color="#66842E"/>
+          </stroke>
+        </Path>
+        <Path x="-14.8584" y="-14.8584" alpha="0.2" winding="nonZero" ai:seqID="18" data="M13.8252 34.7305C24.6738 32.4004 32.6201 26.5645 31.5742 21.6934 31.0674 19.335 33.1602 10.8867 31.7764 4.44434 34.0264 1.44434 34.4941 2.37988 34.9551 0 35.0078 0.265625 35.0439 0.533203 35.0439 0.804688 35.0439 5.17676 35.0439 24.8584 35.0439
+ 29.2305 35.0439 34.2129 26.0498 38.251 14.9541 38.251 9.00586 38.251 3.67871 37.084 0 35.2393 3.81445 35.9424 8.67773 35.8359 13.8252 34.7305Z">
+          <fill>
+            <SolidColor color="#131215"/>
+          </fill>
+        </Path>
+        <Path x="-23.1621" y="-29.4707" alpha="0.2" winding="nonZero" ai:seqID="19" data="M0.0517578 32.4121C2.84473 32.4121 5.10938 30.1484 5.10938 27.3564L5.10938 3.30176C5.10938 2.0332 4.625 0.887695 3.85352 0 6.62207 0.0292969 8.85938 2.27637 8.85938 5.05176L8.85938 29.1064C8.85938 31.8984 6.59473 34.1621 3.80176 34.1621 2.27734
+ 34.1621 0.927734 33.4736 0 32.4072 0.0175781 32.4072 0.0341797 32.4121 0.0517578 32.4121Z">
+          <fill>
+            <SolidColor color="#131215"/>
+          </fill>
+        </Path>
+      </Group>
+    </Definition>
+  </Library>
+  <Group ai:seqID="1" d:layerType="page" d:pageHeight="82.684" d:pageWidth="49.688" d:type="layer" d:userLabel="Artboard 1">
+    <Group ai:seqID="2" d:type="layer" d:userLabel="Layer 1">
+      <droid_nw x="24.8457" y="41.3423" ai:seqID="20" flm:knockout="false"/>
+    </Group>
+  </Group>
+  <Private/>
+</Graphic>
