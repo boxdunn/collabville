@@ -5,13 +5,12 @@ using System.Collections;
 using PlayerIO.GameLibrary;
 using System.Drawing;
 
-namespace MyGame {
+namespace DrawPad {
 	//Player class. each player that join the game will have these attributes.
 	public class Player : BasePlayer {
-       // public 
 	}
 
-	[RoomType("MyGame")]
+	[RoomType("DrawPad")]
 	public class GameCode : Game<Player> {
 		// This method is called when an instance of your the game is created
 		public override void GameStarted() {
@@ -64,9 +63,7 @@ namespace MyGame {
 						break;
 					}
 				case "ChatMessage":{
-                    //Broadcast("ChatMessage", player.Id, message.GetString(0));
-                    Broadcast("ChatMessage", player.Id, player.ConnectUserId, message.GetString(0));
-                   
+						Broadcast("ChatMessage", player.Id, message.GetString(0));
 						break;
 					}
 			}

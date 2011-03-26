@@ -23,11 +23,23 @@ package com.collabville.core.components
 		
 		private var _column:uint;
 		private var _row:uint;
+		private var _ID:uint=NaN;
 		
-		public function CharacterEntity ( model:CharacterModel, direction:String = null ) {
+		public function CharacterEntity ( model:CharacterModel, direction:String = null ):void {
 			super();
+			
+			_direction = direction == null ? MapDirections.SOUTH : direction;
 			_model = model;
-			this.direction = direction == null ? MapDirections.SOUTH : direction;
+		}
+
+		public function get ID():uint
+		{
+			return _ID;
+		}
+		
+		public function set ID(value:uint):void
+		{
+			_ID = value;
 		}
 
 		public function get column ():uint {
@@ -43,17 +55,56 @@ package com.collabville.core.components
 		}
 		
 		public function set direction ( value:String ):void {
-			switch ( value ) {
-				case MapDirections.EAST:
-				case MapDirections.NORTH:
-				case MapDirections.SOUTH:
-				case MapDirections.WEST:
-					_direction = value;
-					changeCharacterModel();
-					break;
-				default:
-					break;
+			
+			if(_direction==value) return;
+			_direction=value;
+			
+				
+			changeCharacterModel(_model)
+			//if(!changeCharacterModel(_model))
+				//throw new Error("Setting Model Direction on NoModel ERROR. Set model first");
+			
+			
+			
+			
+			
+			
+			
+			
+		}
+		
+		private function changeCharacterModel(mod:CharacterModel):Boolean
+		{
+			if(mod)
+			{
+				if ( _skin && this.contains(DisplayObject(_skin)) )
+					
+					removeElement(_skin)
+				switch ( _direction ) {
+					case MapDirections.EAST:
+						_skin = _model.topRightDisplay;
+						break;
+					case MapDirections.NORTH:
+						_skin = _model.topLeftDisplay;
+						break;
+					case MapDirections.SOUTH:
+						_skin = _model.bottomRightDisplay;
+						break;
+					case MapDirections.WEST:
+						_skin = _model.bottomLeftDisplay;
+						break;
+					default:
+						break;
+				}
+				
+				if ( _skin is IVisualElement )
+					addElement(_skin);
+				
+				
+				return true;
 			}
+			else
+				return false;
 		}
 		
 		public function dispose ():void {
@@ -70,8 +121,13 @@ package com.collabville.core.components
 		}
 		
 		public function set model ( value:CharacterModel ):void {
+			
+			if(_model==value) return; //same model
+			
 			_model = value;
-			changeCharacterModel();
+			
+			changeCharacterModel(value);
+					
 		}
 		
 		public function moveToPosition ( column:Number, row:Number, animate:Boolean = false ):void {
@@ -106,29 +162,6 @@ package com.collabville.core.components
 			_row = value;
 		}
 		
-		private function changeCharacterModel ():void {
-			if ( _skin && this.contains(DisplayObject(_skin)) )
-				removeElement(_skin)			
-			
-			switch ( direction ) {
-				case MapDirections.EAST:
-					_skin = model.topRightDisplay;
-					break;
-				case MapDirections.NORTH:
-					_skin = model.topLeftDisplay;
-					break;
-				case MapDirections.SOUTH:
-					_skin = model.bottomRightDisplay;
-					break;
-				case MapDirections.WEST:
-					_skin = model.bottomLeftDisplay;
-					break;
-				default:
-					break;
-			}
-			
-			if ( _skin is IVisualElement )
-				addElement(_skin);
-		}
+	
 	}
 }

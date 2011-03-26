@@ -9,6 +9,7 @@ package com.collabville.core.components.supportClasses
 	public interface IGridMap extends IVisualElement, IDisposable
 	{
 		function addEntity ( entity:IMapEntity, row:uint, column:uint ):Boolean;
+		function getEntityByID(ID:int):IMapEntity;
 		function getMarkerAt ( row:uint, column:uint ):IMapMarker;
 		function isPointAccessible ( row:uint, column:uint ):Boolean;
 		function isPointOccupied ( row:uint, column:uint ):Boolean;

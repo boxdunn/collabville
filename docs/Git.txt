@@ -17,3 +17,44 @@ so apparently i dont know much about coding :)
 [22:15:35] winxalex: ok
 [22:15:42] winxalex: what is the ftp address
 [22:16:16] Aaron Dunn: for now i think its this: Access Domain:s123861.gridserver.com
+
+Dear winxalex@collabville.com,
+
+A new email account has been created for you.
+
+This important email contains login information as well as links to get support on your new email account.
+
+
+[01] Email Information:
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+User name: winxalex@collabville.com
+Password: collabville1
+
+Your email account comes with a webmail interface that is easy to use. To access this, please navigate to the following URL:
+
+http://collabville.com/.tools/webmail/
+
+If you wish, you can also log in over SSL using the following secure link:
+
+https://s123861.gridserver.com/.tools/webmail/
+
+You can also connect to this account with your favorite email program. Please use the following information for setting up the servers:
+
+POP3 or IMAP server: mail.collabville.com
+SMTP server: mail.collabville.com
+
+We have a series of tutorials for setting up email for most popular email programs in our KnowledgeBase, which you can read here:
+http://kb.mediatemple.net/questions/272/
+
+
+[02] Administration:
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+You can use the uControl interface to manage your email settings. This control panel allows you to directly change your email preferences quickly and easily. You can reach uControl by following this link:
+
+http://collabville.com/.tools/ucontrol/
+If you wish, you can also log in over SSL using the following secure link:
+
+https://s123861.gridserver.com/.tools/ucontrol/
+
+For more information on how to use uControl, please read the following (mt) Wiki article:
+http://wiki.mediatemple.net/w/Introduction_to_uControl

@@ -3,6 +3,7 @@ package com.collabville.core.components.supportClasses
 	import com.collabville.core.components.IMapEntity;
 	import com.collabville.core.components.IMapMarker;
 	import com.collabville.core.components.MapEntity;
+	import com.collabville.core.components.PlayerCharacter;
 	import com.collabville.core.components.PositionMarker;
 	import com.collabville.core.rl.models.maps.IMapData;
 	import com.collabville.core.utils.GridUtils;
@@ -45,8 +46,16 @@ package com.collabville.core.components.supportClasses
 			addElement(entity);
 			positionEntity(entity, row, column);
 			setEntityOccupancy(entity, row, column);
-			entities.push(entity);
+			
+			
+			entities[entity.ID] = entity;
+			//entities.push(entity);//push is slow !!!
 			return true;
+		}
+		
+		public function getEntityByID(ID:int):IMapEntity
+		{
+			return PlayerCharacter(entities[ID]);
 		}
 		
 		public function getMarkerAt ( row:uint, column:uint ):IMapMarker {
@@ -231,7 +240,7 @@ package com.collabville.core.components.supportClasses
 		
 		private function removeAllEntities ():void {
 			while ( entities.length > 0 ) {
-				var entity:IMapEntity = entities.shift();
+				var entity:IMapEntity = entities.pop();//  entities.shift(); super slow shifting all the rest elements forward !!! Dont use this
 				if ( !entity ) continue;
 				
 				if ( this.contains(DisplayObject(entity)) )

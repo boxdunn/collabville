@@ -17,5 +17,9 @@ package com.collabville.core.components
 		function set offset ( value:Point ):void;
 		function get row ():uint;
 		function set row ( value:uint ):void;
+		function get ID():uint;
+		function set ID(value:uint):void;
+		
+		
 	}
 }

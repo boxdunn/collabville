@@ -15,6 +15,8 @@ package com.collabville.core.components
 		
 		private var _column:uint;
 		private var _row:uint;
+		private var _ID:uint;
+		
 		
 		private var _occupancyGrid:Vector.<uint> = new Vector.<uint>();
 		
@@ -24,6 +26,16 @@ package com.collabville.core.components
 				this.graphic = graphic;
 				addElement(this.graphic);
 			}
+		}
+		
+		public function get ID():uint
+		{
+			return _ID;
+		}
+		
+		public function set ID(value:uint):void
+		{
+			_ID = value;
 		}
 
 		public function get column ():uint {

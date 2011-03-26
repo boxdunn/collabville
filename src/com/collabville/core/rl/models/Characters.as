@@ -10,6 +10,7 @@ package com.collabville.core.rl.models
 			model.bottomRightDisplay = new LevieBR();
 			model.topLeftDisplay = new LevieTL();
 			model.topRightDisplay = new LevieTR();
+			model.type="levieModel";
 			return model;
 		}
 		
@@ -19,6 +20,7 @@ package com.collabville.core.rl.models
 			model.bottomRightDisplay = new AndroidBR();
 			model.topLeftDisplay = new AndroidTL();
 			model.topRightDisplay = new AndroidTR();
+			model.type="androidModel";
 			return model;
 		}
 		
@@ -28,6 +30,7 @@ package com.collabville.core.rl.models
 			model.bottomRightDisplay = new LumbBR();
 			model.topLeftDisplay = new LumbTL();
 			model.topRightDisplay = new LumbTR();
+			model.type="lumberghModel";
 			return model;
 		}
 		
@@ -37,6 +40,7 @@ package com.collabville.core.rl.models
 			model.bottomRightDisplay = new LinkBR();
 			model.topLeftDisplay = new LinkTL();
 			model.topRightDisplay = new LinkTR();
+			model.type="linkModel";
 			return model;
 		}
 		
@@ -46,6 +50,7 @@ package com.collabville.core.rl.models
 			model.bottomRightDisplay = new ZuckBR();
 			model.topLeftDisplay = new ZuckTL();
 			model.topRightDisplay = new ZuckTR();
+			model.type="zuckerbergModel";
 			return model;
 		}
 		
@@ -55,6 +60,7 @@ package com.collabville.core.rl.models
 			model.bottomRightDisplay = new MiltonBR();
 			model.topLeftDisplay = new MiltonTL();
 			model.topRightDisplay = new MiltonTR();
+			model.type="miltonModel";
 			return model;
 		}
 		
@@ -64,6 +70,7 @@ package com.collabville.core.rl.models
 			model.bottomRightDisplay = new PandaBR();
 			model.topLeftDisplay = new PandaTL();
 			model.topRightDisplay = new PandaTR();
+			model.type="pandaModel";
 			return model;
 		}
 		
@@ -73,6 +80,7 @@ package com.collabville.core.rl.models
 			model.bottomRightDisplay = new BallmerBR();
 			model.topLeftDisplay = new BallmerTL();
 			model.topRightDisplay = new BallmerTR();
+			model.type="ballmerModel";
 			return model;
 		}
 		
@@ -82,6 +90,7 @@ package com.collabville.core.rl.models
 			model.bottomRightDisplay = new JobsBR();
 			model.topLeftDisplay = new JobsTL();
 			model.topRightDisplay = new JobsTR();
+			model.type="jobsModel";
 			return model;
 		}
 	}

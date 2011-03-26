@@ -1,0 +1,7 @@
+D:\Projects\CollabVille\serverside\Serverside Code\Game Code\bin\Debug\MyGame.dll
+D:\Projects\CollabVille\serverside\Serverside Code\Game Code\bin\Debug\MyGame.pdb
+D:\Projects\CollabVille\serverside\Serverside Code\Game Code\bin\Debug\Player.IO GameLibrary.dll
+D:\Projects\CollabVille\serverside\Serverside Code\Game Code\bin\Debug\Player.IO GameLibrary.xml
+D:\Projects\CollabVille\serverside\Serverside Code\Game Code\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\CollabVille\serverside\Serverside Code\Game Code\obj\Debug\MyGame.dll
+D:\Projects\CollabVille\serverside\Serverside Code\Game Code\obj\Debug\MyGame.pdb

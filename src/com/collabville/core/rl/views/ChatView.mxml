@@ -9,6 +9,8 @@
 			
 			import mx.collections.ArrayCollection;
 			import mx.events.FlexEvent;
+			
+			
 			protected function sendMessageButton_clickHandler(event:MouseEvent):void
 			{
 				// TODO Auto-generated method stub

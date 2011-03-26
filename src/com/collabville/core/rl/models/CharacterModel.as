@@ -8,6 +8,18 @@ package com.collabville.core.rl.models
 		private var _bottomRightDisplay:IVisualElement;
 		private var _topLeftDisplay:IVisualElement;
 		private var _topRightDisplay:IVisualElement;
+		private var _type:String;
+		
+
+		public function get type():String
+		{
+			return _type;
+		}
+
+		public function set type(value:String):void
+		{
+			_type = value;
+		}
 
 		public function get bottomLeftDisplay ():IVisualElement {
 			return _bottomLeftDisplay;

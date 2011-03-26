@@ -1,5 +1,6 @@
 package com.collabville.core.rl.mediators
 {
+	
 	import com.collabville.core.components.PlayerCharacter;
 	import com.collabville.core.components.TheCloudMap;
 	import com.collabville.core.components.WorkvilleMap;
@@ -14,6 +15,7 @@ package com.collabville.core.rl.mediators
 	import flash.display.InteractiveObject;
 	
 	import mx.core.UIComponent;
+	import mx.formatters.NumberFormatter;
 	import mx.managers.FocusManager;
 	
 	import org.robotlegs.mvcs.Mediator;
@@ -45,18 +47,28 @@ package com.collabville.core.rl.mediators
 			//service.facebookOAuthPopup(view.stage, gameID);
 			
 			addContextListener(MapEvent.CHANGE, changeMap, DataEvent);
-			addContextListener(PlayerIOEvent.INIT_CHAT,onInitChatView);
+			addContextListener(PlayerIOEvent.CONNECTED,onPlayerConnected);
+			
 			initializePlayer();
 			setMap(new TheCloudMap());
 			
-			service.playerIOconnect("mygame-qth4pauezekh9t62drhhsq","testuser"+Math.random());
+			
+			service.playerIOconnect(player,"mygame-qth4pauezekh9t62drhhsq","testuser"+int(Math.random()*10000),true);
 			
 		}
 		
-		private function onInitChatView(e:PlayerIOEvent):void
+		
+		
+		private function onPlayerConnected(e:PlayerIOEvent):void
 		{
-			view.mapContainer.addElement(new ChatView());
+			//create UI interface (room list, join stuff and so on)
+			var chatView:ChatView=new ChatView();
+			chatView.scaleX=0.5;
+			chatView.scaleY=0.5;
+			view.mapContainer.addElement(chatView);
 		}
+		
+		
 		
 		private function changeMap ( event:DataEvent ):void {
 			if ( event.data && event.data is Class ) {

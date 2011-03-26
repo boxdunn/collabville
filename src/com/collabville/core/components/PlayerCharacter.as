@@ -13,7 +13,7 @@ package com.collabville.core.components
 	public class PlayerCharacter extends CharacterEntity
 	{
 		public function PlayerCharacter () {
-			super(Characters.pandaModel);
+			super(null);//Characters.pandaModel
 			this.addEventListener(Event.ADDED_TO_STAGE, stageAdded, false, 0, true);
 		}
 		
