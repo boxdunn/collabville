@@ -5,10 +5,12 @@ package com.collabville.core.components.supportClasses
 	import com.collabville.core.components.MapEntity;
 	import com.collabville.core.components.PlayerCharacter;
 	import com.collabville.core.components.PositionMarker;
+	import com.collabville.core.rl.events.MapEvent;
 	import com.collabville.core.rl.models.maps.IMapData;
 	import com.collabville.core.utils.GridUtils;
 	
 	import flash.display.DisplayObject;
+	import flash.events.Event;
 	import flash.events.MouseEvent;
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
@@ -89,13 +91,16 @@ package com.collabville.core.components.supportClasses
 		public function isPointAccessible ( row:uint, column:uint ):Boolean {			
 			var marker:IMapMarker = getMarkerAt(row, column);
 			return marker == null ? false : marker.accessible;
+			return true;
 		}
 		
 		public function isPointOccupied ( row:uint, column:uint ):Boolean {
 			if ( !isPointAccessible(row, column) ) return false;
 			
 			var marker:IMapMarker = getMarkerAt(row, column);
-			return marker == null ? false : marker.occupied;
+			return marker == null ? false : marker.occupied;/**/
+			return false;
+			
 		}
 		
 		public function get mapData ():IMapData {
@@ -109,18 +114,27 @@ package com.collabville.core.components.supportClasses
 		
 		public function positionEntity ( entity:IMapEntity, row:uint, column:uint, animate:Boolean = false ):void {
 			var marker:IMapMarker = getMarkerAt(row, column);
-			if ( !marker ) return;
+			if ( !marker ){
+				trace("client"+entity.ID,"no maker At",row,column)
+				return;
+			} 
+			
+			trace("client"+entity.ID,"positionEntity marker:"+marker.center)
 			
 			var center:Point = marker.center;
 			center.y += (mapData.tileHeight / 2); 
 			
-			center.offset(entity.offset.x, entity.offset.y);
+			center.offset(entity.offset.x, entity.offset.y);   /**/
+		
 			
 			setPointAccessibility(entity.row, entity.column, true);
 			setPointOccupancy(entity.row, entity.column, null);
 			
 			entity.row = row;
 			entity.column = column;
+			
+			trace("client"+entity.ID,"positionEntity",row,column)
+			
 			
 			setPointAccessibility(entity.row, entity.column, false);
 			setPointOccupancy(entity.row, entity.column, entity);
@@ -226,6 +240,7 @@ package com.collabville.core.components.supportClasses
 				var column:uint = 0;
 				while ( start.x < this.width ) {
 					var marker:PositionMarker = createMarker(start, row, column);
+					marker.addEventListener(MouseEvent.CLICK,onMouseClick);
 					markerRow[column] = marker;
 					addElement(marker);
 					start.x += mapData.tileWidth;
@@ -236,6 +251,12 @@ package com.collabville.core.components.supportClasses
 				start.y += mapData.tileHeight / 2;
 				row++;
 			}
+		}
+		
+		
+		private function onMouseClick(e:Event):void{
+		
+			dispatchEvent(new MapEvent(MapEvent.CLICK,e.target));
 		}
 		
 		private function removeAllEntities ():void {

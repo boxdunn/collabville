@@ -132,10 +132,15 @@ package com.collabville.core.components
 		
 		public function moveToPosition ( column:Number, row:Number, animate:Boolean = false ):void {
 			var duration:Number = animate ? 0.4 : 0.0;
+			
+			trace("client"+this.ID,"moveToPosition",column,row);
+			
 			column -= (_skin.width / 2);
 			row -= _skin.height;
 			
+			trace("client"+this.ID,"moveToPosition","x:"+column,"y:"+row);
 			TweenMax.to(this, duration, { x: column, y: row, ease: Linear.easeNone }); 
+			
 		}
 		
 		public function get occupancyGrid ():Vector.<uint> {

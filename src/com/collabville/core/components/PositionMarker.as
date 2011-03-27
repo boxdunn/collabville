@@ -4,6 +4,7 @@ package com.collabville.core.components
 	
 	import flash.display.Graphics;
 	import flash.events.Event;
+	import flash.events.MouseEvent;
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
 	
@@ -21,6 +22,8 @@ package com.collabville.core.components
 		
 		public function PositionMarker () {
 			super();
+			
+			
 		}
 		
 		public function get accessible ():Boolean {

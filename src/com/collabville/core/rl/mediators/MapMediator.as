@@ -3,6 +3,7 @@ package com.collabville.core.rl.mediators
 	import com.collabville.core.components.IMapEntity;
 	import com.collabville.core.components.MapDirections;
 	import com.collabville.core.components.PlayerCharacter;
+	import com.collabville.core.components.PositionMarker;
 	import com.collabville.core.components.supportClasses.IGridMap;
 	import com.collabville.core.rl.actors.PlayerIOServiceActor;
 	import com.collabville.core.rl.events.DataEvent;
@@ -36,7 +37,7 @@ package com.collabville.core.rl.mediators
 			addContextListener(PlayerIOEvent.PLAYERS_LIST,onPlayerList);
 			addContextListener(PlayerIOEvent.PLAYER_MOVE,onPlayerMove);
 			
-			
+			map.addEventListener(MapEvent.CLICK,onMapClick,DataEvent);
 			
 			setMapAccessibility();
 			addObjectSet();
@@ -44,9 +45,36 @@ package com.collabville.core.rl.mediators
 		}
 		
 		
+		private function onMapClick(event:DataEvent):void{
+			
+			var nextPositionMarker:PositionMarker=PositionMarker(event.data);
+			var diffRow:int=player.row-nextPositionMarker.row;
+			var diffCol:int=player.column-nextPositionMarker.column;
+			var direction:String;
+			
+			//TODO temporary 
+			if(diffRow>0)
+			  direction=MapDirections.EAST;
+			else
+			  direction=MapDirections.WEST;
+							  
+		    if(diffCol>0)
+				direction=MapDirections.NORTH;
+			else
+				direction=MapDirections.SOUTH;
+				
+				
+			
+			event=new DataEvent(MapEvent.MOVE,direction)
+				
+			moveClientPlayer(event);
+		}
+		
+		
 		private function onPlayerMove(e:PlayerIOEvent):void
 		{
 			trace("client"+player.ID,"onSomePlayerMove",e.message.getUInt(0),e.message.getString(1));
+			
 				movePlayer(map.getEntityByID(e.message.getUInt(0)),e.message.getString(1));
 			
 		}
@@ -87,8 +115,7 @@ package com.collabville.core.rl.mediators
 			//create and postion new user
 			if(e.id==player.ID)
 			{
-				
-				
+					
 			 	addPlayer(player);
 			}
 			else
@@ -123,7 +150,7 @@ package com.collabville.core.rl.mediators
 			
 		}
 		
-		private function determineDestination ( direction:String ):Point {
+		private function determineDestination (plyr:IMapEntity, direction:String ):Point {
 			
 			var index:int;
 			
@@ -144,7 +171,7 @@ package com.collabville.core.rl.mediators
 					return null;
 			}
 			
-			return GridUtils.getRelativeGridPoint(index, player.row, player.column);
+			return GridUtils.getRelativeGridPoint(index, plyr.row, plyr.column);
 		}
 		
 		
@@ -167,12 +194,13 @@ package com.collabville.core.rl.mediators
 		private function movePlayer (plyr:IMapEntity,dir:String ):Boolean {
 			
 			
-			   var point:Point = determineDestination(dir);
+			   var point:Point = determineDestination(plyr,dir);
 				
 				if ( point == null ) return false;
 				
 				PlayerCharacter(plyr).direction = dir;
 				
+				//TODO transfer map and checking to server
 				if ( map.isPointAccessible(point.y, point.x) ) {
 					if ( !map.isPointOccupied(point.y, point.x) ) {
 						map.positionEntity(plyr, point.y, point.x, true);
@@ -184,7 +212,10 @@ package com.collabville.core.rl.mediators
 					}
 				}
 				
-				return false;
+				
+				return true;
+				
+				//return false;
 						
 		}
 		

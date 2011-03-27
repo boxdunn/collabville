@@ -53,8 +53,8 @@ package com.collabville.core.rl.mediators
 			setMap(new TheCloudMap());
 			
 			
-			service.playerIOconnect(player,"mygame-qth4pauezekh9t62drhhsq","testuser"+int(Math.random()*10000),true);
-			
+			//service.playerIOconnect(player,"mygame-qth4pauezekh9t62drhhsq","testuser"+int(Math.random()*10000),true);
+			service.playerIOconnect(player,"mygame-qth4pauezekh9t62drhhsq","testuser"+int(Math.random()*10000),false);
 		}
 		
 		
